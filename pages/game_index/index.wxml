@@ -1,0 +1,14 @@
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <view class="title">垃圾分类最强大脑</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx;height:{{windowHeight}}px">
+  <image class="img" src="/images/bg.png" mode="scaleToFill" style="top:{{top}}rpx"></image>
+  <view class="content">
+  	<image class="title" src="/images/title.png" mode="scaleToFill"></image>
+  	<view class="btn" bindtap='handleSkip'>
+  	  <text>开始</text>
+  	  <image class="back" src="/images/go-back.png" mode="scaleToFill"></image>
+  	</view>
+  </view>
+	
+</view>

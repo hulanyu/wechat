@@ -1,0 +1,25 @@
+<!--可回收垃圾-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">可回收垃圾</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx">
+  <view class="content">
+  	<image class="img" src="/images/nav/recyclable.png" mode="scaleToFill"></image>
+  	<view class="top">
+  	  <text class="tip">可回收垃圾</text>
+  	  <text>是指，适宜回收利用和资源化利用的生活废弃物，如废纸张、废塑料、废玻璃制品、废金属、废织物等。</text>
+  	</view>
+  	<view class="middle">
+  	  <text class="tip">可回收垃圾主要包括:</text>
+  	  <text>报纸、纸箱、书本、广告单、塑料瓶、塑料玩具、油桶、酒瓶、玻璃杯、易拉罐、旧铁锅、旧衣服、包、旧玩偶、旧数码产品、旧家电。</text>
+  	</view>
+  	<view class="bottom">
+  	  <text class="tip">可回收垃圾投放要求:</text>
+  	  <text>1. 轻投轻放</text>
+  	  <text>2. 清洁干燥、避免污染，废纸尽量平整</text>
+  	  <text>3. 立体包装请清空内容物，清洁后压扁投放</text>
+  	  <text>4. 有尖锐边角的，应包裹后投放</text>
+  	</view>
+  </view>
+</view>

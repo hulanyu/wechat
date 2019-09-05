@@ -1,0 +1,75 @@
+/* pages/recyclable_index/index.wxss */
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 450rpx;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  box-sizing: border-box;
+  background:linear-gradient(180deg,rgba(107,115,255,1),rgba(0,13,255,1));
+}
+.head .img-back{
+  width: 46rpx;
+  height: 30rpx;
+  margin-left: 23rpx;
+  margin-top: 25rpx;
+}
+.head .title{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+  height: 88rpx;
+  line-height: 88rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container{
+  position: relative;
+  background-color: #ffffff;
+}
+.container .content{
+  position: absolute;
+  width:660rpx;
+  top:200rpx;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  background:rgba(253,242,241,1);
+  border-radius:20rpx;
+  margin: 0 auto;
+  padding-left: 34rpx;
+  padding-right: 35rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #666666
+}
+.content .img{
+  width: 140rpx;
+  height: 140rpx;
+  margin-top: 46rpx;
+  margin-left:228rpx;
+  margin-bottom: 40rpx;
+}
+.content .top{
+  margin-bottom: 60rpx; 
+}
+.tip{
+  color: #333333;
+}
+.content .middle{
+  margin-bottom: 60rpx; 
+}
+.content .bottom{
+  margin-bottom: 81rpx; 
+}
+.middle .tip{
+  display: inline-block;
+  width: 591rpx;
+}
+.bottom text{
+  display: inline-block;
+  width: 591rpx;
+}

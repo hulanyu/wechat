@@ -1,0 +1,24 @@
+<!--有害垃圾-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">有害垃圾</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx">
+  <view class="content">
+  	<image class="img" src="/images/nav/hazardous.png" mode="scaleToFill"></image>
+  	<view class="top">
+  	  <text class="tip">有害垃圾</text>
+  	  <text>是指，对人体健康或者自然环境造成直接或潜在危害的废弃物。</text>
+  	</view>
+  	<view class="middle">
+  	  <text class="tip">有害垃圾主要包括:</text>
+  	  <text>废电池（充电电池、铅酸电池、镍镉电池、纽扣电池等）、废油漆、消毒剂、荧光灯管、含汞温度计、废药品及其包装物等</text>
+  	</view>
+  	<view class="bottom">
+  	  <text class="tip">有害垃圾投放要求:</text>
+  	  <text>1.投放时请注意轻放</text>
+  	  <text>2.易破损的请连带包装或包裹后轻放</text>
+  	  <text>3.如易挥发，请密封后投放</text>
+  	</view>
+  </view>
+</view>

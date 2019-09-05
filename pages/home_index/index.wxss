@@ -1,0 +1,200 @@
+.custom .title{
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.custom .top {
+  width: 100%;
+  position:absolute;
+  left: 0;
+  z-index: -1;
+}
+/*.container{
+  display: flex;
+  flex-direction: column;
+}*/
+.body{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.content{
+  width:100%;
+  height:189rpx;
+  background:rgba(245,245,245,1);
+  position: relative;
+}
+/*搜索框*/
+.content .search-bar-box {
+  width: 640rpx;
+  margin: 0 auto;
+  height: 90rpx;
+  border-radius: 45rpx;
+  background:rgba(255,255,255,1);
+  box-shadow:0px 8px 10px 0px rgba(204,204,204,0.22);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position:absolute;
+  align-items: flex-end;
+  top: -44rpx;
+  left:50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  padding: 27rpx 20rpx;
+  box-sizing: border-box;
+}
+ .search-bar-box .clear {
+  height: 36rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 54rpx;
+}
+.search-bar-box image {
+  width: 36rpx;
+  height: 36rpx;
+}
+.search-bar-box input {
+  height: 36rpx;
+  color: #37383a;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  min-height: 36rpx;
+  flex-grow: 1;
+  padding-left:10rpx;
+}
+/*拍照识别*/
+.other .box{
+  margin-right: 160rpx;
+  margin-left: 154rpx;
+  margin-top: 79rpx;
+  display: flex;
+  justify-content: space-between; 
+}
+.box .item {
+  text-align: center;
+}
+.box .item .txt{
+  height:20rpx;
+  font-size:22rpx;
+  font-family:SourceHanSansSC-Regular;
+  font-weight:400;
+  line-height: 20rpx;
+  color:rgba(153,153,153,1);
+}
+.box .item .ar{
+  width: 38rpx;
+  height: 41rpx;
+}
+.box .item .photo{
+  width: 45rpx;
+  height: 35rpx;
+}
+.box .item .share{
+  width: 42rpx;
+  height: 34rpx;
+}
+/*实时热点*/
+.hots-warp {
+ margin-top: 39rpx;
+ padding: 0 24rpx;
+ background: #ffffff;
+ overflow: hidden;
+}
+.hots-warp .fenlei{
+  width:340rpx;
+  height:200rpx;
+  background:rgba(242,242,242,1);
+  border-radius:20rpx;
+  float: left;
+  margin-right: 22rpx;
+  margin-bottom: 22rpx;
+}
+.fenlei:nth-child(2n){
+  margin-right: 0;
+}
+.fenlei .img{
+  width: 84rpx;
+  height: 81rpx;
+  float: left;
+}
+.fenlei .img image{
+  width: 100%;
+  height: 100%;
+}
+.fenlei .waste{
+  float:left;
+  margin-left: 26rpx;
+}
+.waste .top{
+  height:33rpx;
+  font-size:34rpx;
+  font-family:SourceHanSansSC-Bold;
+  font-weight:bold;
+  color:rgba(51,51,51,1);
+  line-height: 33rpx;
+}
+.waste .tip{
+  height:25rpx;
+  font-size:24rpx;
+  font-family:SourceHanSansSC-Regular;
+  color:rgba(153,153,153,1);
+  line-height: 25rpx;
+  margin-top: 18rpx;
+}
+.kitchen_index .img{
+  margin-left: 22rpx;
+  margin-top: 58rpx;
+}
+.kitchen_index .waste{
+  margin-top: 65rpx;
+}
+.residual_index .img{
+  width: 62rpx;
+  height: 69rpx;
+  margin-left: 35rpx;
+  margin-top: 64rpx;
+}
+.residual_index .waste{
+  margin-top: 65rpx;
+}
+.recyclable_index .img{
+  width: 69rpx;
+  height: 68rpx;
+  margin-left: 30rpx;
+  margin-top: 69rpx;
+}
+.recyclable_index .waste{
+  margin-top: 60rpx;
+}
+.hazardous_index .img{
+  width: 68rpx;
+  height: 83rpx;
+  margin-left: 43rpx;
+  margin-top: 58rpx;
+}
+.hazardous_index .waste{
+  margin-top: 60rpx;
+}
+/*搜索结果页*/
+.search_result_tabs {
+  height: 64rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 86rpx;
+  z-index: 10;
+}
+.search_result_tabs .lists{
+  width: 375rpx;
+  display: flex;
+}
+.lists text{
+  display: inline-block;
+  margin-right: 24rpx;
+}

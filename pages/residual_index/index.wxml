@@ -1,0 +1,23 @@
+<!--干垃圾-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">干垃圾</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx">
+  <view class="content">
+  	<image class="img" src="/images/nav/residual.png" mode="scaleToFill"></image>
+  	<view class="top">
+  	  <text class="tip">干垃圾</text>
+  	  <text> 是指，除可回收物、有害垃圾、湿垃圾以外的其它生活废弃物。</text>
+  	</view>
+  	<view class="middle">
+  	  <text class="tip">干垃圾主要包括:</text>
+  	  <text>餐盒、餐巾纸、湿纸巾、卫生间用纸、塑料袋、食品包装袋、污染严重的纸、烟蒂、纸尿裤、一次性杯子、大骨头、贝壳、花盆等。</text>
+  	</view>
+  	<view class="bottom">
+  	  <text class="tip">干垃圾投放要求:</text>
+  	  <text>1. 尽量沥干水份</text>
+  	  <text>2. 难以辨识类别的生活垃圾投入干垃圾容器内</text>
+  	</view>
+  </view>
+</view>

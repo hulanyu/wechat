@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<!-- 窗口 -->
+<view class="custom" style="padding-top:{{statusBarHeight}}px">
+  <view class="title">垃圾分类指南</view>
+  <image class="top" src="/images/banner.png" mode="widthFix" style="top:{{statusBarHeight}}px"></image>
+</view>
+<view class="body" style="padding-top:{{top}}rpx">
+  <view class="content">
+    <!-- 搜索栏 -->
+    <view class="search-bar-box">
+      <image src="/images/search.png" class="search" mode="scaleToFill"></image>
+      <input placeholder="输入查询物" value="{{search_key}}" confirm-type="search" bindinput="inputChange" bindblur="inputBlur" bindconfirm="search" bindfocus="inputFocus"/>
+      <view class="clear" bindtap="clearKey">
+        <image src="/images/clear.svg" mode="scaleToFill"></image>
+      </view>
+    </view>
+    <!-- 拍照分享 -->
+    <view class="other">
+      <view class="box">
+        <view class="item">
+          <image class="ar" src="/images/logo/ar.png" mode="scaleToFill"></image>
+          <view class="txt">AR识别</view>
+        </view>
+        <view class="item">
+          <image class="photo" src="/images/logo/photo.png" mode="scaleToFill"></image>
+          <view class="txt">拍照识别</view>
+        </view>
+        <view class="item">
+          <image class="share" src="/images/logo/share.png" mode="scaleToFill"></image>
+          <view class="txt">好友分享</view>
+        </view>
+      </view>
+    </view> 
+  </view>
+  
+  <!-- 默认页面 -->
+  <block wx:if="{{!show_search_result}}">
+  <view class="hots-warp">
+    <view class="fenlei {{item.type}}" wx:for="{{fenlei}}" bindtap="toDetail" data-type="{{item.type}}" wx:key="{{item.id}}">
+      <view class="img">
+        <image src="{{item.img}}" mode="scaleToFill"></image>
+      </view>
+      <view class="waste">
+        <view class="top">{{item.name}}</view>
+        <view class="tip">{{item.desc}}</view>
+      </view>
+    </view>     
+  </view>
+    
+  </block>
+  <!-- 搜索结果页面 -->
+  <block wx:else>
+   <view class="search_result_tabs">
+    <view class="lists" wx:for="{{resource_data.list}}" wx:for-item="item">
+        <text>{{item.name}}</text>
+        <text wx:if="{{item.type == 0}}">可回收垃圾</text>
+        <text wx:if="{{item.type == 1}}">有害垃圾</text>
+        <text wx:if="{{item.type == 2}}">湿垃圾</text>
+        <text wx:if="{{item.type == 3}}">干垃圾</text>
+    </view>
+   </view>
+    
+  </block> 
+</view>
+

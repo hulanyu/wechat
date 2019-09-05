@@ -1,0 +1,11 @@
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">垃圾分类指南</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx">
+  <view class="content">
+  	<image class="full" src="/images/full.png" mode="widthFix" wx:if="{{list.length == 0}}"></image>
+
+  </view>
+	
+</view>

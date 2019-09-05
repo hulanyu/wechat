@@ -1,0 +1,48 @@
+<!--pages/game_result/index.wxml-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">垃圾分类最强大脑</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx;height:{{windowHeight}}px">
+  <image class="bg" src="/images/bg.png" mode="scaleToFill"></image>
+  <view class="content">
+  	<view class="user">
+  	  <image class="user-img" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
+  	</view>
+  	<view class="result">
+  	  <view class="left">
+  	  	<image class="correct" src="/images/correct1.png" mode="scaleToFill"></image>
+  	  	<text class="num">{{detail_data.crroect}} <text>题</text></text>
+  	  </view>
+  	  <view class="line"></view>
+  	  <view class="right">
+  	  	<image class="wrong" src="/images/wrong1.png" mode="scaleToFill"></image>
+  	  	<text class="num">{{detail_data.wrong}} <text>题</text></text>
+  	  </view>
+  	</view>
+  </view>
+  <view class="kou">
+    <image class="left" src="/images/kou.png"></image>
+    <image class="left" src="/images/kou.png"></image>
+  </view>
+  <view class="list">
+    <view class="item" wx:for="{{question_list}}" wx:key="item.id">
+      <view class="name">
+        <text>{{index + 1}}.{{item.name}}</text>
+        <text wx:if="{{item.is_right == 1}}">干垃圾</text>
+        <text wx:if="{{item.is_right == 2}}">湿垃圾</text>
+        <text wx:if="{{item.is_right == 3}}">可回收垃圾</text>
+        <text wx:if="{{item.is_right == 4}}">有害垃圾</text>
+      </view>
+      <view class="right">
+        <image class="correct" src="/images/correct1.png" mode="scaleToFill" wx:if="{{item.is_right == item.right}}"></image>
+        <image class="wrong" src="/images/wrong1.png" mode="scaleToFill" wx:if="{{item.is_right !== item.right}}"></image>
+        <text class="types" wx:if="{{item.is_right !== item.right && item.right == 1}}">干垃圾</text>
+        <text class="types" wx:if="{{item.is_right !== item.right && item.right == 2}}">湿垃圾</text>
+        <text class="types" wx:if="{{item.is_right !== item.right && item.right == 3}}">可回收垃圾</text>
+        <text class="types" wx:if="{{item.is_right !== item.right && item.right == 4}}">有害垃圾</text> 
+      </view>
+      
+    </view>
+  </view>
+</view>

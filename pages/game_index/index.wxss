@@ -1,0 +1,54 @@
+/* pages/game-index/index.wxss */
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 88rpx;
+  width: 100%;
+  background:#230C64;
+  z-index: 999;
+}
+.head .title{
+  text-align: center;
+  font-size: 35rpx;
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+  height: 88rpx;
+  line-height: 88rpx;
+}
+.container{
+  position: relative;
+}
+.container .img{
+  width:100%;
+  position:fixed;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+}
+.content .title{
+  width: 630rpx;
+  height: 141rpx;
+  margin-top: 317rpx;
+}
+.content .btn{
+  width:240rpx;
+  height:86rpx;
+  background:linear-gradient(0deg,rgba(254,64,126,1) 0%,rgba(255,190,95,1) 100%);
+  border-radius:43rpx;
+  margin: 0 auto;
+  margin-top: 144rpx;
+  text-align: center;
+  line-height: 86rpx;
+}
+.btn text{
+  font-size:38rpx;
+  font-family:SourceHanSansSC-Medium;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.btn .back{
+  width: 46rpx;
+  height: 30rpx;
+  margin-left: 13rpx;
+}

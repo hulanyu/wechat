@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/home_index/index",
+    "pages/guide_index/index",
+    "pages/game_index/index",
+    "pages/hazardous_index/index",
+    "pages/kitchen_index/index",
+    "pages/recyclable_index/index",
+    "pages/residual_index/index",
+    "pages/game_onging/index",
+    "pages/game_result/index",
+    "pages/search_index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarTitleText": "垃圾分类指南",
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"custom"
+  },
+  "networkTimeout": {
+    "request": 60000,
+    "connectSocket": 30000,
+    "uploadFile": 600000,
+    "downloadFile": 600000
+  },
+  "tabBar": {
+    "color": "#B3B3B3",
+    "selectedColor": "#666666",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/home_index/index",
+        "text": "指南",
+        "iconPath": "/images/icon/icon_guide_normal.png",
+        "selectedIconPath": "/images/icon/icon_guide_selected.png"
+      },
+      {
+        "pagePath": "pages/guide_index/index",
+        "text": "专题",
+        "iconPath": "/images/icon/icon_home_normal.png",
+        "selectedIconPath": "/images/icon/icon_home_selected.png"
+      },
+      {
+        "pagePath": "pages/game_index/index",
+        "text": "游戏",
+        "iconPath": "/images/icon/icon_game_normal.png",
+        "selectedIconPath": "/images/icon/icon_game_selected.png"
+      }
+    ]
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

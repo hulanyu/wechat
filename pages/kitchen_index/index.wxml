@@ -1,0 +1,23 @@
+<!--湿垃圾-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">湿垃圾</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx">
+  <view class="content">
+  	<image class="img" src="/images/nav/kitchen.png" mode="scaleToFill"></image>
+  	<view class="top">
+  	  <text class="tip">湿垃圾</text>
+  	  <text>是指，日常生活垃圾产生的容易腐烂的生物质废弃物。</text>
+  	</view>
+  	<view class="middle">
+  	  <text class="tip">湿垃圾主要包括:</text>
+  	  <text>食材废料、剩饭剩菜、过期食品、蔬菜水果、瓜皮果核、花卉绿植、中药残渣等。</text>
+  	</view>
+  	<view class="bottom">
+  	  <text class="tip">湿垃圾投放要求:</text>
+  	  <text>1. 纯流质的食物垃圾，如牛奶等，应直接倒进下水口。</text>
+  	  <text>2. 有包装物的湿垃圾应将包装物去除后分类投放，包装物请投放到对应的可回收物或干垃圾容器。</text>
+  	</view>
+  </view>
+</view>

@@ -1,0 +1,34 @@
+<!--pages/game_onging/index.wxml-->
+<view class="head" style="padding-top:{{statusBarHeight}}px">
+  <image src='/images/back-pre.png' class="img-back" mode='aspectFill' bindtap='_navback'></image>
+  <view class="title" style="top:{{statusBarHeight}}px">垃圾分类最强大脑</view>
+</view>
+<view class="container" style="padding-top:{{top}}rpx;height:{{windowHeight}}px">
+  <image class="bg" src="/images/bg1.png" mode="scaleToFill"></image>
+  <view class="content">
+  	<view class="user">
+  	  <image class="user-img" src="{{userInfo.avatarUrl}}" mode="scaleToFill"></image>
+  	</view>
+  	<view class="tip">
+  	  <view class="left">{{current_index + 1}}/10</view>
+  	  <view class="right">{{time}}S</view>
+  	</view>
+  	<view class="product">
+      <image src="{{current_question.image_url}}"></image>
+    </view>
+    <view class="answer">
+      <view class="answer-item {{item.id === current_question.user_selected? 'selected' : ''}} {{current_question.is_confirm && item.is_right == current_question.is_right? 'right' : ''}} {{current_question.is_confirm && item.id === current_question.user_selected && item.is_right !== current_question.is_right? 'wrong' : ''}} {{item.type}}" bindtap="selectAnswer" data-id="{{item.id}}" wx:for="{{answers_list}}" wx:key="item.id" data-right="{{item.is_right}}">
+        <view class="imgs-item">
+          <image class="{{item.type}}" src="{{item.img}}" wx:if="{{item.id !== current_question.user_selected}}"></image>
+          <image class="{{item.type}}" src="{{item.img_select}}" wx:if="{{item.id == current_question.user_selected}}"></image>
+          <image class="answer-index" wx:if="{{item.is_right == current_question.is_right && item.id == current_question.user_selected}}" src="/images/correct.png"></image>
+          <image class="answer-index" wx:if="{{item.is_right !== current_question.is_right && item.id == current_question.user_selected}}" src="/images/wrong.png"></image>
+        </view>
+        <view class="waste">
+          <view class="top">{{item.name}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+	
+</view>

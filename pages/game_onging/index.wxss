@@ -1,0 +1,196 @@
+/* pages/game_onging/index.wxss */
+.head{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 88rpx;
+  width: 100%;
+  background:#230C64;
+  z-index: 999;
+  display: flex;
+}
+.head .img-back{
+  width: 46rpx;
+  height: 30rpx;
+  margin-left: 23rpx;
+  margin-top: 25rpx;
+}
+.head .title{
+  font-size: 35rpx;
+  font-weight: 600;
+  color: rgba(255,255,255,1);
+  height: 88rpx;
+  line-height: 88rpx;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container{
+  position: relative;
+  background-color: #ffffff;
+}
+.content{
+  position: absolute;
+  top:134rpx;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.container .bg{
+  width:100%;
+  position:fixed;
+  left: 0;
+  height: 100%;
+}
+.content .user{
+  width: 144rpx;
+  height:144rpx;
+  border-radius: 50%;
+  background:rgba(108,17,178,1);
+  text-align: center;
+  line-height: 134rpx;
+  margin-top: 141rpx;
+  z-index: 10;
+}
+.user .user-img{
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.content .tip{
+  height: 90rpx;
+  width: 100%;
+  font-size:34rpx;
+  font-family:SourceHanSansSC-Regular;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+  z-index: 10;
+}
+.tip .left{
+  float: left;
+  width: 160rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background:linear-gradient(0deg,rgba(83,20,157,1) 0%,rgba(89,40,187,1) 100%);
+  border-top-right-radius: 45rpx;
+  border-bottom-right-radius: 45rpx;
+}
+.tip .right{
+  float: right;
+  width: 160rpx;
+  height: 90rpx;
+  text-align: center;
+  line-height: 90rpx;
+  background:linear-gradient(0deg,rgba(254,66,126,1) 0%,rgba(255,189,95,1) 100%);
+  border-top-left-radius: 45rpx;
+  border-bottom-left-radius: 45rpx;
+}
+.content .product{
+  width:400rpx;
+  height:260rpx;
+  background:rgba(255,255,255,1);
+  border-radius:20rpx;
+  z-index: 10;
+  line-height: 260rpx;
+  text-align: center;
+  margin-top: 41rpx;
+}
+.product image{
+  width:304rpx;
+  height:247rpx;
+  vertical-align: middle;
+}
+.answer{
+  width: 100%;
+  overflow: hidden;
+  z-index: 10;
+  margin-top: 70rpx;	
+}
+.answer-item{
+  width:250rpx;
+  height:160rpx;
+  background:rgba(255,255,255,1);
+  border-radius:20rpx;
+  float: left;
+  margin-right: 60rpx;
+  margin-bottom: 30rpx;
+  z-index:10;
+  margin-left: 95rpx;
+}
+.selected.right{
+  background:rgba(12,199,91,1);
+}
+.selected.wrong{
+  background:rgba(255,80,80,1);
+}
+.answer-item:nth-child(2n){
+  margin-right:95rpx;
+  margin-left: 0;
+}
+.answer-item .imgs-item {
+  width: 100%;
+  display: flex;
+  
+}
+.imgs-item .answer-index{
+  width: 34rpx;
+  height: 34rpx;
+  margin-left: 42rpx;
+  margin-top: 20rpx;
+}
+.answer-item .imgs-item .residual{
+  width: 54rpx;
+  height: 60rpx;
+  margin-top: 27rpx;
+  margin-left: 99rpx;
+}
+.answer-item .imgs-item .kitchen{
+  width: 68rpx;
+  height: 65rpx;
+  margin-top: 20rpx;
+  margin-left: 91rpx;	
+}
+.answer-item .imgs-item .recyclable{
+  width: 59rpx;
+  height: 58rpx;
+  margin-top: 29rpx;
+  margin-left: 96rpx;	
+}
+.answer-item .imgs-item .hazardous{
+  width: 52rpx;
+  height: 64rpx;
+  margin-top: 25rpx;
+  margin-left: 104rpx;	
+}
+.answer-item .waste{
+  text-align: center;
+  margin-top: 20rpx;
+  font-weight:bold;
+  color:rgba(43,21,73,1);
+  font-size: 30rpx;
+}
+.selected.right .waste{
+  color:rgba(255,255,255,1) !important;
+}
+.selected.wrong .waste{
+  color:rgba(255,255,255,1) !important;
+}
+.next-question{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 92rpx;
+  background-color: #2c5a73;
+  line-height: 92rpx;
+  color: #6d8a99;
+  font-size: 34rpx;
+  text-align: center;
+  z-index: 10;
+}
