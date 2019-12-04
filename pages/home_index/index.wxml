@@ -1,16 +1,16 @@
 <!--index.wxml-->
 <!-- 窗口 -->
-<view class="custom" style="padding-top:{{statusBarHeight}}px">
-  <view class="title">垃圾分类指南</view>
-  <image class="top" src="/images/banner.png" mode="widthFix" style="top:{{statusBarHeight}}px"></image>
+<view class="custom" style="top:-{{statusBarHeight}}px">
+  <view class="title" style="padding-top:{{statusBarHeight*2}}px">垃圾分类指南</view>
+  <image class="top" src="/images/banner.png" style="top:{{statusBarHeight}}px;height:{{statusBarHeight+225}}px"></image>
 </view>
 <view class="body" style="padding-top:{{top}}rpx">
   <view class="content">
     <!-- 搜索栏 -->
     <view class="search-bar-box">
       <image src="/images/search.png" class="search" mode="scaleToFill"></image>
-      <input placeholder="输入查询物" value="{{search_key}}" confirm-type="search" bindinput="inputChange" bindblur="inputBlur" bindconfirm="search" bindfocus="inputFocus"/>
-      <view class="clear" bindtap="clearKey">
+      <input placeholder="输入查询物" value="{{search_key}}" confirm-type="search" bindinput="inputChange" bindconfirm="search" bindfocus="inputFocus"/>
+      <view class="clear" bindtap="clearKey" wx:if="{{show_clear_btn}}">
         <image src="/images/clear.svg" mode="scaleToFill"></image>
       </view>
     </view>
@@ -27,7 +27,7 @@
         </view>
         <view class="item">
           <image class="share" src="/images/logo/share.png" mode="scaleToFill"></image>
-          <view class="txt">好友分享</view>
+          <button open-type='share' class="txt" id="share">好友分享</button>
         </view>
       </view>
     </view> 

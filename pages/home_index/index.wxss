@@ -86,6 +86,10 @@
   font-weight:400;
   line-height: 20rpx;
   color:rgba(153,153,153,1);
+  border: none;
+}
+button::after{
+  border: none;
 }
 .box .item .ar{
   width: 38rpx;

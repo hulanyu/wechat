@@ -13,6 +13,7 @@
   	  <view class="left">{{current_index + 1}}/10</view>
   	  <view class="right">{{time}}S</view>
   	</view>
+    <view class="title">{{current_question.name}}</view>
   	<view class="product">
       <image src="{{current_question.image_url}}"></image>
     </view>

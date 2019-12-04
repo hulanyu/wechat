@@ -136,7 +136,7 @@
   background:rgba(255,255,255,1);
   border-radius:20rpx;
   margin: 0 auto;
-  padding: 76rpx 44rpx 52rpx 40rpx;
+  padding: 76rpx 40rpx 52rpx 40rpx;
   box-sizing: border-box;
 }
 .list .item{
@@ -144,7 +144,6 @@
   margin-bottom: 21rpx;
   height: 28rpx;
   line-height: 28rpx;
-  justify-content: space-between;
 }
 .list .item text{
   display: inline-block;
@@ -153,8 +152,10 @@
 }
 .list .item .name{
   width: 348rpx;
-  display: flex;
-  justify-content: space-between;
+}
+.list .item .name text:first-child{
+  display: inline-block;
+  width:186rpx; 
 }
 .list .item  text{
   display: inline-block;
@@ -163,14 +164,13 @@
 }
 .list .item .right{
   display: flex;
-  justify-content: space-between;
   margin-left: 30rpx;
 }
 .list .item .right image{
   display: inline-block;
   width: 28rpx;
   height: 28rpx; 
-  margin-right: 70rpx;
+  margin-right: 24rpx;
 }
 .list .item .right .types{
   color: #0CC75B;

@@ -73,6 +73,22 @@ Page({
   onPullDownRefresh: function () {
 
   },
+    /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function (res) {
+    this.setData({
+      show_share: false,
+      from: res.from,
+      time_before: Date.parse(new Date())
+    })
+    console.log(this.data.time_before, res);
+    return {
+      title: '垃圾分类指南',
+      path: `/pages/home_index/index`,
+      imageUrl: "/",
+    }
+  },
   // 输入变化
   inputChange: function (e) {
     let _value = e.detail.value.trim()
@@ -88,17 +104,6 @@ Page({
       show_clear_btn: !!_value
     })
   },
-
-  // 失焦
-  inputBlur: function (e) {
-    setTimeout(() => {
-      let _value = e.detail.value.trim()
-      this.setData({
-        show_clear_btn: false
-      })
-    }, 100)
-  },
-
   // 搜索
   search: function (e) {
     let _value = e.detail.value.trim()
@@ -113,9 +118,8 @@ Page({
   clearKey: function () {
     this.setData({
       search_key: '',
-      show_clear_btn: false
+      show_clear_btn:false
     })
-    console.log('11111')
   },
   //去对应的分类详情
   toDetail: function(e) {

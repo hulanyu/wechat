@@ -70,11 +70,21 @@ Page({
 
   },
 
-  /**
+    /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    this.setData({
+      show_share: false,
+      from: res.from,
+      time_before: Date.parse(new Date())
+    })
+    console.log(this.data.time_before, res);
+    return {
+      title: '垃圾分类最强大脑',
+      path: `/pages/game_index/index`,
+      imageUrl: "/",
+    }
   },
   handleSkip: function() {
     wx.navigateTo({

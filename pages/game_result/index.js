@@ -44,11 +44,22 @@ Page({
   onReady: function () {
 
   },
-   /**
+  
+    /**
    * 用户点击右上角分享
    */
-  onShareAppMessage: function () {
-
+  onShareAppMessage: function (res) {
+    this.setData({
+      show_share: false,
+      from: res.from,
+      time_before: Date.parse(new Date())
+    })
+    console.log(this.data.time_before, res);
+    return {
+      title: '垃圾分类指南',
+      path: `/pages/game_result/index`,
+      imageUrl: "/",
+    }
   },
   //返回
   _navback: function() {
